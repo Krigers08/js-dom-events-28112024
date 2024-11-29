@@ -1,26 +1,23 @@
-const body = document.body;
-const div = document.createElement("div");
+    const spanHi = document.querySelector("#hi");
+    const spanBye = document.querySelector("#bye");
+    const Btn = document.querySelector("#Btn");
 
-div.innerText = "Sveiki";
-// div.innerHTML = "<small>Sveiks1</small>";
-
-body.append(div);
-
-const spanHi = document.querySelector("#hi");
-const spanBye = document.querySelector("#bye");
-
-// spanHi.remove()
-//ieliekot hi tiks nonemts hello un ja bye tad tiks iznemts bye
-//spanHI.remove() pievieno atpakal
-
-console.log(spanHi.id)
-// console.log(spanBye.id = 'adad')
-//nomaina id
-
-console.log(spanBye.dataset.test)
-//izvada "data-..."
+    spanHi.classList.add("h3");
+    spanHi.style.color = "blue";
 
 
-spanHi.classList.add('hi3');
+    console.log(spanHi.classList);
+    console.log(spanHi.id);
 
-spanHi.style.color = "red"
+    console.log(spanBye.dataset.test);
+
+    spanBye.id = "Bye2";
+    console.log(spanBye.id); 
+
+
+    Btn.addEventListener("click", function() {
+        if (spanHi) {
+            spanHi.style.color = spanHi.style.color === "blue" ? "green" : "blue";
+        }
+    });
+    
