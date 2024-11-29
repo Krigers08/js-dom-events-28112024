@@ -11,7 +11,6 @@ const spanBye = document.querySelector("#bye");
 
 // spanHi.remove()
 //ieliekot hi tiks nonemts hello un ja bye tad tiks iznemts bye
-//spanHI.remove() pievieno atpakal
 
 console.log(spanHi.id)
 // console.log(spanBye.id = 'adad')
